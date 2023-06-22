@@ -10,7 +10,7 @@ NAME = "ptoi"
 AUTHOR = "urasakikeisuke"
 AUTHOR_EMAIL = "urasakikeisuke.ml@gmail.com"
 LICENSE = "MIT License"
-VERSION = "1.1"
+VERSION = "1.2"
 PYTHON_REQUIRES = ">=3.6"
 INSTALL_REQUIRES = [
     "numpy",

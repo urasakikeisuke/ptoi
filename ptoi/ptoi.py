@@ -1,5 +1,5 @@
-from pathlib import Path
 import tempfile
+from pathlib import Path
 
 try:
     from typing import Iterable, Optional, Tuple
@@ -149,7 +149,7 @@ class PutText:
             color = readable_color(bgcolor)
 
         dummy_draw = ImageDraw.Draw(Image.new("RGB", (0, 0)))
-        text_w, text_h = dummy_draw.textsize(text, font=self.ttf)
+        text_w, text_h = dummy_draw.textbbox((0, 0), text, font=self.ttf)[2:4]
 
         text_b = int(0.1 * text_h)
         offset_x = [0, 0, text_w // 2]
